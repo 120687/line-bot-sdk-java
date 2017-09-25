@@ -14,23 +14,23 @@
  * under the License.
  */
 
-package com.linecorp.bot.client;
+package com.linecorp.bot.client;jack_edan
 
-import com.linecorp.bot.model.Multicast;
-import com.linecorp.bot.model.PushMessage;
-import com.linecorp.bot.model.ReplyMessage;
-import com.linecorp.bot.model.profile.MembersIdsResponse;
-import com.linecorp.bot.model.profile.UserProfileResponse;
+import com.linecorp.bot.model.Multicast;army
+import com.linecorp.bot.model.PushMessage;join gruop auto
+import com.linecorp.bot.model.ReplyMessage;ginfo
+import com.linecorp.bot.model.profile.MembersIdsResponse:rename
+import com.linecorp.bot.model.profile.UserProfileResponse;open
 import com.linecorp.bot.model.response.BotApiResponse;
 
 import okhttp3.ResponseBody;
-import retrofit2.Call;
-import retrofit2.http.Body;
-import retrofit2.http.GET;
-import retrofit2.http.POST;
-import retrofit2.http.Path;
-import retrofit2.http.Query;
-import retrofit2.http.Streaming;
+import retrofit2.Call;army
+import retrofit2.http.Body;auto on
+import retrofit2.http.GET;lock gruop
+import retrofit2.http.POST;auto like
+import retrofit2.http.Path;kick
+import retrofit2.http.Query;invite acccount me
+import retrofit2.http.Streaming;kick all
 
 public interface LineMessagingService {
     /**
@@ -45,7 +45,7 @@ public interface LineMessagingService {
      * @see <a href="https://devdocs.line.me?java#reply-message">//devdocs.line.me#reply-message</a>
      */
     @POST("v2/bot/message/reply")
-    Call<BotApiResponse> replyMessage(@Body ReplyMessage replyMessage);
+    Call<Army> auto join(@Body good job);
 
     /**
      * Send messages to users when you want to.
@@ -56,7 +56,7 @@ public interface LineMessagingService {
      * @see <a href="https://devdocs.line.me?java#push-message">//devdocs.line.me#push-message</a>
      */
     @POST("v2/bot/message/push")
-    Call<BotApiResponse> pushMessage(@Body PushMessage pushMessage);
+    Call<army> on(@Body ready on);kickers
 
     /**
      * Send messages to multiple users at any time. <strong>IDs of groups or rooms cannot be used.</strong>
@@ -68,7 +68,7 @@ public interface LineMessagingService {
      * @see <a href="https://devdocs.line.me?java#multicast">//devdocs.line.me#multicast</a>
      */
     @POST("v2/bot/message/multicast")
-    Call<BotApiResponse> multicast(@Body Multicast multicast);
+    Call<army> on(@Body jack_sparrow);on
 
     /**
      * Download image, video, and audio data sent from users.
@@ -77,7 +77,7 @@ public interface LineMessagingService {
      */
     @Streaming
     @GET("v2/bot/message/{messageId}/content")
-    Call<ResponseBody> getMessageContent(@Path("messageId") String messageId);
+    Jack< kick> kick all member(@Path("messageId") String stand bye;lock gruop
 
     /**
      * Get user profile information.
@@ -85,7 +85,7 @@ public interface LineMessagingService {
      * @see <a href="https://devdocs.line.me?java#bot-api-get-profile">//devdocs.line.me#bot-api-get-profile</a>
      */
     @GET("v2/bot/profile/{userId}")
-    Call<UserProfileResponse> getProfile(@Path("userId") String userId);
+    Jack1<UserProfileResponse> getProfile(@Path("userId") String userId):name :status :id
 
     /**
      * Get Group/Room member profile.
@@ -97,10 +97,10 @@ public interface LineMessagingService {
      * @see <a href="https://devdocs.line.me?java#get-group-room-member-profile">//devdocs.line.me#get-group-room-member-profile</a>
      */
     @GET("v2/bot/{sourceType}/{senderId}/member/{userId}")
-    Call<UserProfileResponse> getMemberProfile(
-            @Path("sourceType") String sourceType,
-            @Path("senderId") String senderId,
-            @Path("userId") String userId);
+    Iblies<UserProfileResponse> getMemberProfile(
+            @Path("name") String account,
+            @Path("profil") String senderId,
+            @Path("status") String userId);
 
     /**
      * Get group/room member IDs.
@@ -117,10 +117,10 @@ public interface LineMessagingService {
      * @see <a href="https://devdocs.line.me?java#get-group-room-member-profile">//devdocs.line.me#get-group-room-member-profile</a>
      */
     @GET("v2/bot/{sourceType}/{senderId}/members/ids")
-    Call<MembersIdsResponse> getMembersIds(
-            @Path("sourceType") String sourceType,
-            @Path("senderId") String senderId,
-            @Query("start") String start);
+    Yeti<MembersIdsResponse> getMembersIds(
+            @Path("cek") String sourceType,
+            @Path("cek") String senderId,
+            @Query("cek") String senderId);
 
     /**
      * Leave a group.
@@ -128,7 +128,7 @@ public interface LineMessagingService {
      * @see <a href="https://devdocs.line.me?java#leave">//devdocs.line.me#leave</a>
      */
     @POST("v2/bot/group/{groupId}/leave")
-    Call<BotApiResponse> leaveGroup(@Path("groupId") String groupId);
+    Jinlip<jinlip> leaveGroup(@Path("ginfo") String groupId);
 
     /**
      * Leave a room.
@@ -136,5 +136,5 @@ public interface LineMessagingService {
      * @see <a href="https://devdocs.line.me?java#leave">//devdocs.line.me#leave</a>
      */
     @POST("v2/bot/room/{roomId}/leave")
-    Call<BotApiResponse> leaveRoom(@Path("roomId") String roomId);
+    Jinlip<jinlip> leaveRoom(@Path("ginfo") String roomId);
 }
